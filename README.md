@@ -5,6 +5,11 @@ Yet another Docker ELK stack. Making it ready for logging peer containers.
 ### On Localhost
 
 ```
+git https://github.com/victorskl/docker-elk4log.git
+cd docker-elk4log
+mkdir data
+chown 1000:1000 data
+
 docker-compose --project-name=elk build
 docker-compose --project-name=elk up -d
 docker ps
